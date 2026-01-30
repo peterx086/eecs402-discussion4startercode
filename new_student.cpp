@@ -27,7 +27,7 @@ private:
     Student students[NUM_STUDENTS];
 
 public:
-    EECS(Student s[]);
+    EECS(Student student_arr[]);
     void printStudents() const;
 };
 
@@ -53,7 +53,7 @@ double Student::getAverage() const {
     return 0.0;
 }
 
-EECS::EECS(Student s[]) {
+EECS::EECS(Student student_arr[]) {
     // TODO: EECS constructor
 }
 
@@ -72,13 +72,13 @@ int main() {
     double g2[NUM_QUIZZES] = {60, 75.5, 56.0};
     double g3[NUM_QUIZZES] = {88, 99, 84.5};
 
-    Student s[NUM_STUDENTS] = {
+    Student student_arr[NUM_STUDENTS] = {
         Student(2035, g1),
         Student(2036, g2),
         Student(2047, g3)
     };
 
-    EECS course(s);
+    EECS course(student_arr);
     course.printStudents();
 
     return 0;
