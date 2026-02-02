@@ -31,6 +31,23 @@ public:
     void printStudents() const;
 };
 
+int main() {
+    double g1[NUM_QUIZZES] = {90, 95, 92};
+    double g2[NUM_QUIZZES] = {60, 75.5, 56.0};
+    double g3[NUM_QUIZZES] = {88, 99, 84.5};
+
+    Student student_arr[NUM_STUDENTS] = {
+        Student(2035, g1),
+        Student(2036, g2),
+        Student(2047, g3)
+    };
+
+    EECS course(student_arr);
+    course.printStudents();
+
+    return 0;
+}
+
 Student::Student() {
     // TODO: default constructor, set everything to 0
 }
@@ -65,21 +82,4 @@ void EECS::printStudents() const {
         cout << "Average Score: "
             << students[i].getAverage() << endl << endl;
     }
-}
-
-int main() {
-    double g1[NUM_QUIZZES] = {90, 95, 92};
-    double g2[NUM_QUIZZES] = {60, 75.5, 56.0};
-    double g3[NUM_QUIZZES] = {88, 99, 84.5};
-
-    Student student_arr[NUM_STUDENTS] = {
-        Student(2035, g1),
-        Student(2036, g2),
-        Student(2047, g3)
-    };
-
-    EECS course(student_arr);
-    course.printStudents();
-
-    return 0;
 }
