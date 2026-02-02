@@ -42,6 +42,7 @@ int main() {
         Student(2047, g3)
     };
 
+    student_arr[2].setGraduationYear(2000);
     EECS course(student_arr);
     course.printStudents();
 
