@@ -1,3 +1,4 @@
+```cpp
 //Peter Xie Winter 2026 EECS 402 Discussion 4
 //Implement the TODOs
 
@@ -27,7 +28,7 @@ private:
     Student students[NUM_STUDENTS];
 
 public:
-    EECS(Student student_arr[]);
+    EECS(Student studentArr[]);
     void printStudents() const;
 };
 
@@ -36,14 +37,14 @@ int main() {
     double g2[NUM_QUIZZES] = {60, 75.5, 56.0};
     double g3[NUM_QUIZZES] = {88, 99, 84.5};
 
-    Student student_arr[NUM_STUDENTS] = {
+    Student studentArr[NUM_STUDENTS] = {
         Student(2035, g1),
         Student(2036, g2),
         Student(2047, g3)
     };
 
-    student_arr[2].setGraduationYear(2000);
-    EECS course(student_arr);
+    studentArr[2].setGraduationYear(2000);
+    EECS course(studentArr);
     course.printStudents();
 
     return 0;
@@ -71,7 +72,7 @@ double Student::getAverage() const {
     return 0.0;
 }
 
-EECS::EECS(Student student_arr[]) {
+EECS::EECS(Student studentArr[]) {
     // TODO: EECS constructor
 }
 
