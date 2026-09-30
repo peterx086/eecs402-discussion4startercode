@@ -1,4 +1,3 @@
-```cpp
 //Peter Xie Winter 2026 EECS 402 Discussion 4
 //Implement the TODOs
 
